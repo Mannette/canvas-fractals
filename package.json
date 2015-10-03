@@ -1,0 +1,24 @@
+{
+  "name": "fractals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "canvas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mannette/canvas-fractals.git"
+  },
+  "author": "Ethan Mannette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mannette/canvas-fractals/issues"
+  },
+  "homepage": "https://github.com/Mannette/canvas-fractals#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-jshint": "^1.11.2"
+  }
+}
