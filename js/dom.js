@@ -4,9 +4,11 @@ $(document).ready(function() {
   $('#trees').click(function() {
 
     var trunk = Math.ceil(Math.random() * 50);
+    var randomRoot = Math.floor(Math.random() * size.x);
 
-    drawTrees(size.x / 2, size.y, trunk, 0);
+    getRandomColor();
+    drawTrees(randomRoot, size.y, trunk, 0);
 
   });
 
-})
+});

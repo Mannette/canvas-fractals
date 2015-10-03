@@ -2,6 +2,7 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var size = {x: canvas.width, y: canvas.height};
 var pixelSize = 5;
+var color = '#';
 
 // draw the border
 function drawBorder() {
@@ -11,8 +12,6 @@ drawBorder();
 
 // function to draw the trees
 function drawTrees(startX, startY, trunkWidth, level) {
-
-  var phi = (Math.sqrt(5) + 1) / 2;
 
   if (level < 12) {
 
@@ -24,6 +23,8 @@ function drawTrees(startX, startY, trunkWidth, level) {
 
     var topLeftX = startX - Math.random() * changeX;
     var topLeftY = startY - Math.random() * changeY;
+
+    context.strokeStyle = color;
 
     // draw right branch
     context.beginPath();
@@ -46,4 +47,10 @@ function drawTrees(startX, startY, trunkWidth, level) {
   }
 }
 
-// drawTrees(size.x / 2, size.y, 50, level);
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
