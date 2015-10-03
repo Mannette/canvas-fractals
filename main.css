@@ -1,5 +1,12 @@
 .canvas {
   position: absolute;
   left: 35%;
-  top: 10%
+  top: 10%;
+  display: block;
+}
+
+.buttons {
+  position: absolute;
+  top: 600px;
+  left: 35%;
 }
