@@ -22,7 +22,7 @@ gulp.task('style', function() {
 
 // configure jshint task
 gulp.task('jshint', function() {
-  return gulp.src('*.js') // update path!
+  return gulp.src('js/*.js') // update path!
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
@@ -31,7 +31,7 @@ gulp.task('jshint', function() {
 gulp.task('watch', function() {
   gulp.watch('js/*.js', ['jshint']); // update path!
   gulp.watch('*.html', ['html']);
-  gulp.watch('css/*.css', ['style']);
+  gulp.watch('*.css', ['style']);
 });
 
 // default task!
