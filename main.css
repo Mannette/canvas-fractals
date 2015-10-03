@@ -10,3 +10,9 @@
   top: 600px;
   left: 35%;
 }
+
+.clearButton {
+  position: relative;
+  left: 200px;
+  top: 5px;
+}
