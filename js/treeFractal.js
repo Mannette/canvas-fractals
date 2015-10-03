@@ -14,33 +14,36 @@ function drawTrees(startX, startY, trunkWidth, level) {
 
   var phi = (Math.sqrt(5) + 1) / 2;
 
-  var changeX = 100 / (level + 1);
-  var changeY = 200 / (level + 1);
+  if (level < 12) {
 
-  var topRightX = startX + Math.random() * changeX;
-  var topRightY = startY + Math.random() * changeY;
+    var changeX = 100 / (level + 1);
+    var changeY = 200 / (level + 1);
 
-  var topLeftX = startX - Math.random() * changeX;
-  var topLeftY = startY - Math.random() * changeY;
+    var topRightX = startX + Math.random() * changeX;
+    var topRightY = startY - Math.random() * changeY;
 
-  // draw right branch
-  context.beginPath();
-  context.moveTo(startX + trunkWidth / 4, startY);
-  context.quadraticCurveTo(startX + trunkWidth / 4, startY - trunkWidth, topRightX, topRightY);
-  context.lineWidth = trunkWidth;
-  context.lineCap = 'round';
-  context.stroke();
+    var topLeftX = startX - Math.random() * changeX;
+    var topLeftY = startY - Math.random() * changeY;
 
-  // draw left branch
-  context.beginPath();
-  context.moveTo(startX - trunkWidth / 4, startY);
-  context.quadraticCurveTo(startX - trunkWidth / 4, startY - trunkWidth, topLeftX, topLeftY);
-  context.lineWidth = trunkWidth;
-  context.lineCap = 'round';
-  context.stroke();
+    // draw right branch
+    context.beginPath();
+    context.moveTo(startX + trunkWidth / 4, startY);
+    context.quadraticCurveTo(startX + trunkWidth / 4, startY - trunkWidth, topRightX, topRightY);
+    context.lineWidth = trunkWidth;
+    context.lineCap = 'round';
+    context.stroke();
 
-  drawTrees(topRightX, topRightY, trunkWidth * phi, level + 1);
-  drawTrees(topLeftX, topLeftY, trunkWidth * phi, level + 1);
+    // draw left branch
+    context.beginPath();
+    context.moveTo(startX - trunkWidth / 4, startY);
+    context.quadraticCurveTo(startX - trunkWidth / 4, startY - trunkWidth, topLeftX, topLeftY);
+    context.lineWidth = trunkWidth;
+    context.lineCap = 'round';
+    context.stroke();
+
+    drawTrees(topRightX, topRightY, trunkWidth * 0.5, level + 1);
+    drawTrees(topLeftX, topLeftY, trunkWidth * 0.5, level + 1);
+  }
 }
 
 // drawTrees(size.x / 2, size.y, 50, level);
