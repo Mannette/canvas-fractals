@@ -4,7 +4,7 @@ function drawTrees(startX, startY, trunkWidth, level) {
   var context = canvas.getContext('2d');
   var size = {x: canvas.width, y: canvas.height};
 
-  if (level < 12) {
+  if (level < 13) {
 
     var changeX = 100 / (level + 1);
     var changeY = 200 / (level + 1);
