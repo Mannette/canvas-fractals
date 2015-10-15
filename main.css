@@ -1,6 +1,6 @@
 .canvas {
   position: absolute;
-  left: 35%;
+  left: 15%;
   top: 10%;
   display: block;
 }
@@ -8,11 +8,11 @@
 .buttons {
   position: absolute;
   top: 600px;
-  left: 35%;
+  left: 30%;
 }
 
 .clearButton {
   position: relative;
-  left: 200px;
+  left: 180px;
   top: 5px;
 }
