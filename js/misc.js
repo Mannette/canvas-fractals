@@ -24,7 +24,7 @@ function clearCanvas() {
   var canvas = document.getElementById('canvas');
   var context = canvas.getContext('2d');
   var size = {x: canvas.width, y: canvas.height};
-  color = '#'
+  color = '#';
 
   context.clearRect(1, 1, size.x - 2, size.y - 2);
   // context.strokeRect(0, 0, size.x, size.y);
