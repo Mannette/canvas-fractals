@@ -4,7 +4,7 @@ $(document).ready(function() {
   drawBorder();
   var pythag = false;
 
-  // event listener for tree button
+  // button to draw some random trees
   $('#trees').click(function() {
     var size = {x: canvas.width, y: canvas.height};
     var trunk = Math.ceil(Math.random() * 50);
@@ -16,6 +16,7 @@ $(document).ready(function() {
 
   });
 
+  // button to draw the pythagoras tree
   $('#pythag').click(function() {
     Pythagoras();
     pythag = true;
