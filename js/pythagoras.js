@@ -1,3 +1,4 @@
+// set constants
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var base_dim = Math.min(canvas.width / 6, canvas.height / 4);
