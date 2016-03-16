@@ -8,11 +8,11 @@
 .buttons {
   position: absolute;
   top: 600px;
-  left: 30%;
+  left: 40%;
 }
 
 .clearButton {
   position: relative;
-  left: 180px;
+  left: 80px;
   top: 5px;
 }
