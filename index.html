@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fractals</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+
+    <div id="canvasContainer">
+      <canvas id="canvas" class="canvas" width="1000" height="500"></canvas>
+
+      <div class="buttons">
+
+        <button id="trees" class="trees btn btn-success">Make some trees!</button>
+        <button id="pythag" class="btn btn-success">Pythagoras Tree</button>
+        
+        <div class="clearButton">
+          <button id="clear" class="clear btn btn-danger">Clear the canvas!</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.5.2/mootools-core.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js"></script>
+
+  <script type="text/javascript" src="js/misc.js"></script>
+  <script src="js/gradient.js"></script>
+  <script type="text/javascript" src="js/treeFractal.js"></script>
+  <script type="text/javascript" src="js/pythagoras.js"></script>
+  <script type="text/javascript" src="js/dom.js"></script>
+  <script type="text/javascript" src="js/terrain.js"></script>
+
+</html>
